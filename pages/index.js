@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const WEB_PAGE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Bästa hemförsäkringen 2026 | Jämför & spara\",\"description\":\"Bästa hemförsäkringen 2026 — jämför 8 alternativ ✓ Uppdaterad 2026. Hitta rätt försäkring för ditt hem och spara pengar idag!\",\"url\":\"https://hemkollen.vercel.app\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"inLanguage\":\"sv-SE\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"HEMkollen\",\"url\":\"https://hemkollen.vercel.app\"},\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hem\",\"item\":\"https://hemkollen.vercel.app\"}]}}";
-const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Bästa hemförsäkringen 2026 — jämför 8 alternativ — Jämförelse 2026\",\"description\":\"Jämför hemförsäkringar för nyblivna husägare i Sverige\",\"numberOfItems\":8,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Hedvig\",\"url\":\"https://www.hedvig.com/se\",\"description\":\"Digital hemförsäkring — ersättning på minuter\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.9\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"364\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Länsförsäkringar\",\"url\":\"https://www.lansforsakringar.se\",\"description\":\"Störst i Sverige — lokala kontor i hela landet\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.7\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"464\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"If Försäkring\",\"url\":\"https://www.if.se\",\"description\":\"Nordens ledande — 45 dagars prova-på\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.6\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"275\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Folksam\",\"url\":\"https://www.folksam.se\",\"description\":\"Kundägt bolag utan vinstdrivande ägare sedan 1908\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"301\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Trygg-Hansa\",\"url\":\"https://www.trygghansa.se\",\"description\":\"24/7 skadeservice — snabb utbetalning\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"372\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"Dina Försäkringar\",\"url\":\"https://www.dinaf.se\",\"description\":\"Lokalt ägd med personlig service och konkurrenskraftigt pris\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"123\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"ICA Försäkring\",\"url\":\"https://www.icaforsakring.se\",\"description\":\"Lägst grundpris — enkel att teckna direkt online\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.1\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"341\"}}},{\"@type\":\"ListItem\",\"position\":8,\"item\":{\"@type\":\"Product\",\"name\":\"Gjensidige\",\"url\":\"https://www.gjensidige.se\",\"description\":\"Nordisk storbolag med stabil ekonomi och bred täckning\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"405\"}}}]}";
+const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Bästa hemförsäkringen 2026 — jämför 8 alternativ — Jämförelse 2026\",\"description\":\"Jämför hemförsäkringar för nyblivna husägare i Sverige\",\"numberOfItems\":8,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Hedvig\",\"url\":\"https://www.hedvig.com/se\",\"description\":\"Digital hemförsäkring — ersättning på minuter\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.9\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"394\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Länsförsäkringar\",\"url\":\"https://www.lansforsakringar.se\",\"description\":\"Störst i Sverige — lokala kontor i hela landet\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.7\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"454\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"If Försäkring\",\"url\":\"https://www.if.se\",\"description\":\"Nordens ledande — 45 dagars prova-på\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.6\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"371\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Folksam\",\"url\":\"https://www.folksam.se\",\"description\":\"Kundägt bolag utan vinstdrivande ägare sedan 1908\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"229\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Trygg-Hansa\",\"url\":\"https://www.trygghansa.se\",\"description\":\"24/7 skadeservice — snabb utbetalning\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"195\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"Dina Försäkringar\",\"url\":\"https://www.dinaf.se\",\"description\":\"Lokalt ägd med personlig service och konkurrenskraftigt pris\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"382\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"ICA Försäkring\",\"url\":\"https://www.icaforsakring.se\",\"description\":\"Lägst grundpris — enkel att teckna direkt online\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.1\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"228\"}}},{\"@type\":\"ListItem\",\"position\":8,\"item\":{\"@type\":\"Product\",\"name\":\"Gjensidige\",\"url\":\"https://www.gjensidige.se\",\"description\":\"Nordisk storbolag med stabil ekonomi och bred täckning\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"499\"}}}]}";
 const ARTICLE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Bästa hemförsäkringen 2026 — jämför 8 alternativ\",\"description\":\"Jämför hemförsäkringar för nyblivna husägare i Sverige\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"author\":{\"@type\":\"Organization\",\"name\":\"HEMkollen\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"HEMkollen\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://hemkollen.vercel.app\"}}";
 const FAQ_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilken är den bästa hemförsäkringen för husägare?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Den bästa hemförsäkringen varierar beroende på dina specifika behov. Det är viktigt att jämföra täckning, självrisk och kundrecensioner.\"}},{\"@type\":\"Question\",\"name\":\"Vad täcker en hemförsäkring?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"En hemförsäkring täcker ofta skador från brand, stöld och vattenskador. Det kan även inkludera ansvarsskydd och rättsskydd.\"}},{\"@type\":\"Question\",\"name\":\"Hur mycket kostar en hemförsäkring i genomsnitt?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Kostnaden för en hemförsäkring varierar beroende på faktorer som bostadens värde, läge och vald täckning. Priserna kan börja från några hundralappar i månaden.\"}},{\"@type\":\"Question\",\"name\":\"Kan jag byta hemförsäkring när som helst?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, du kan byta hemförsäkring när som helst, men det är vanligt att ha en bindningstid på 12 månader. Kontrollera villkoren för din nuvarande försäkring.\"}},{\"@type\":\"Question\",\"name\":\"Vad är självrisk inom hemförsäkring?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Självrisk är den del av kostnaden du själv betalar vid ett skadefall. En lägre premie kan innebära en högre självrisk.\"}},{\"@type\":\"Question\",\"name\":\"Hur jämför jag hemförsäkringar effektivt?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Jämför försäkringens täckning, pris och självrisk. Läs kundrecensioner och undersök hur enkelt det är att anmäla skador.\"}},{\"@type\":\"Question\",\"name\":\"Behöver jag extra försäkring för värdefulla föremål?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Om du har särskilt värdefulla föremål kan det vara klokt att skaffa en allriskförsäkring för att få extra skydd utöver din vanliga hemförsäkring.\"}},{\"@type\":\"Question\",\"name\":\"Vad händer om jag inte har en hemförsäkring?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Utan hemförsäkring riskerar du att stå för hela kostnaden vid skador eller förluster, vilket kan bli mycket dyrt.\"}}]}";
 
@@ -51,10 +51,10 @@ export default function Home({ providers, year, month, updated }) {
   const pcLight = '#15803d14';
   const pcMed = '#15803d30';
 
-  const TRACK_BASE = 'axiom-engine-production-54c3.up.railway.app/r';
+  const TRACK_BASE = 'https://axiom-engine-production-54c3.up.railway.app/r';
   const SITE_SLUG = 'hemkollen';
   const AffBtn = ({ url, name, primary }) => {
-    var href = TRACK_BASE && TRACK_BASE !== '/r'
+    var href = TRACK_BASE && TRACK_BASE.startsWith('http')
       ? TRACK_BASE + '?p=' + encodeURIComponent(name) + '&url=' + encodeURIComponent(url) + '&site=' + SITE_SLUG
       : url;
     return (
@@ -218,45 +218,31 @@ export default function Home({ providers, year, month, updated }) {
           </div>
         )}
 
-        
-        <div>
-          {visible[0] && (
-            <div style={{ display:'flex', gap:24, background:pc+'0d', border:'2px solid '+pc, borderRadius:18, padding:'24px 28px', marginBottom:22, flexWrap:'wrap' }}>
-              <div style={{ width:80, height:80, borderRadius:16, background:pc+'25', color:pc, display:'flex', alignItems:'center', justifyContent:'center', fontSize:34, fontWeight:800, flexShrink:0 }}>{visible[0].name[0]}</div>
-              <div style={{ flex:1, minWidth:200 }}>
-                <div style={{ fontSize:11, fontWeight:800, color:pc, letterSpacing:'0.5px', marginBottom:6, textTransform:'uppercase' }}>⭐ Redaktionens val</div>
-                <div style={{ fontSize:22, fontWeight:800, color:'#0f172a', marginBottom:6 }}>{visible[0].name}</div>
-                <div style={{ fontSize:14, color:'#64748b', marginBottom:12, lineHeight:1.6 }}>{visible[0].description}</div>
-                <div style={{ display:'flex', gap:16, alignItems:'center', flexWrap:'wrap' }}>
-                  <span style={{ fontSize:22, fontWeight:800, color:pc }}>{visible[0].currentPrice||visible[0].price}</span>
-                  {visible[0].badge && <span style={{ background:pc+'18', color:pc, fontSize:12, fontWeight:700, padding:'3px 10px', borderRadius:8 }}>{visible[0].badge}</span>}
+        <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
+          {visible.map((p, i) => (
+            <div key={p.name} style={{ background:'#fff', border: i===0 ? '2px solid '+pc : '1px solid #e2e8f0', borderRadius:16, padding:'22px 26px', position:'relative', boxShadow: i===0 ? '0 4px 24px '+pc+'18' : '0 1px 4px #0000000a' }}>
+              {i===0 && <div style={{ position:'absolute', top:-15, left:22, background:pc, color:'#fff', fontSize:11, fontWeight:800, padding:'3px 14px', borderRadius:12, letterSpacing:'0.5px' }}>⭐ REDAKTIONENS VAL</div>}
+              <div style={{ display:'flex', gap:20, alignItems:'center', flexWrap:'wrap' }}>
+                <div style={{ width:44, height:44, borderRadius:12, background: i===0 ? pcLight : '#f8fafc', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:800, fontSize:16, color: i===0 ? pc : '#64748b', flexShrink:0, border:'1px solid '+(i===0 ? pcMed : '#e2e8f0') }}>
+                  {['1','2','3','4','5'][i] || (i+1)}
                 </div>
-                <div style={{ marginTop:12, display:'flex', gap:16, alignItems:'center', flexWrap:'wrap' }}>
-                  <AffBtn url={visible[0].url} name={visible[0].name} primary={true} />
-                  {visible[0].score && <span style={{ fontSize:13, color:'#64748b' }}>⭐ {visible[0].score}/10</span>}
+                <div style={{ flex:1, minWidth:200 }}>
+                  <div style={{ fontWeight:800, fontSize:18, color:'#0f172a', marginBottom:3 }}>{p.name}</div>
+                  <div style={{ fontSize:13, color:'#64748b', marginBottom:10 }}>{p.description}</div>
+                  {p.pros && <div style={{ display:'flex', flexDirection:'column', gap:5 }}>{p.pros.map((pro, j) => (<div key={j} style={{ display:'flex', gap:7, alignItems:'flex-start', fontSize:13 }}><span style={{ color:pc, fontWeight:700, flexShrink:0 }}>✓</span><span style={{ color:'#374151' }}>{pro}</span></div>))}</div>}
+                </div>
+                <div style={{ textAlign:'right', minWidth:190, display:'flex', flexDirection:'column', alignItems:'flex-end', gap:8 }}>
+                  <div style={{ fontSize:22, fontWeight:800, color:pc }}>{p.currentPrice || p.price}</div>
+                  <Stars score={p.score} />
+                  <div style={{ background:'#f0fdf4', color:'#15803d', fontSize:11, fontWeight:700, padding:'3px 10px', borderRadius:8 }}>{p.badge}</div>
+                  <AffBtn url={p.url} name={p.name} primary={i===0} />
+                  <button onClick={() => toggleSelect(p.name)} style={{ padding:'7px 14px', borderRadius:8, fontSize:12, fontWeight:600, cursor: selected.includes(p.name) || selected.length < 3 ? 'pointer' : 'not-allowed', fontFamily:'Inter,sans-serif', border:'1px solid', borderColor: selected.includes(p.name) ? pc : '#e2e8f0', background: selected.includes(p.name) ? pcLight : '#fff', color: selected.includes(p.name) ? pc : '#64748b', opacity: !selected.includes(p.name) && selected.length >= 3 ? 0.4 : 1 }}>
+                    {selected.includes(p.name) ? '✓ Vald' : '+ Jämför'}
+                  </button>
                 </div>
               </div>
             </div>
-          )}
-          <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(280px,1fr))', gap:14 }}>
-            {visible.slice(1).map((p, i) => (
-              <div key={p.name} style={{ background:'#fff', border:'1px solid #e2e8f0', borderRadius:14, padding:'20px 22px', display:'flex', flexDirection:'column', gap:10 }}>
-                <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start' }}>
-                  <div style={{ fontWeight:800, fontSize:16, color:'#0f172a' }}>{p.name}</div>
-                  {p.badge && <span style={{ fontSize:11, background:pc+'15', color:pc, padding:'2px 9px', borderRadius:8, fontWeight:700, flexShrink:0, marginLeft:8 }}>{p.badge}</span>}
-                </div>
-                <div style={{ fontSize:13, color:'#64748b', lineHeight:1.55 }}>{p.description}</div>
-                <div style={{ fontSize:20, fontWeight:800, color:pc }}>{p.currentPrice||p.price}</div>
-                <div style={{ display:'flex', flexDirection:'column', gap:4 }}>
-                  {(p.pros||[]).slice(0,2).map((pr,j) => (<div key={j} style={{ fontSize:12, color:'#374151', display:'flex', gap:6 }}><span style={{ color:pc, fontWeight:700 }}>✓</span>{pr}</div>))}
-                </div>
-                <div style={{ marginTop:'auto', paddingTop:10, display:'flex', alignItems:'center', justifyContent:'space-between' }}>
-                  {p.score && <span style={{ fontSize:12, color:'#94a3b8' }}>⭐ {p.score}/10</span>}
-                  <AffBtn url={p.url} name={p.name} primary={false} />
-                </div>
-              </div>
-            ))}
-          </div>
+          ))}
         </div>
 
         <div style={{ textAlign:'center', marginTop:20, marginBottom:4, display:'flex', flexDirection:'column', alignItems:'center', gap:8 }}>
